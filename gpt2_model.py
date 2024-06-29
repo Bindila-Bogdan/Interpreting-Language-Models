@@ -50,6 +50,9 @@ class GPT2Model:
     def get_model(self):
         return self.model
 
+    def get_tokenizer(self):
+        return self.tokenizer
+
     def get_g_star(self, text, correct, foil):
         gradients = []
         words = self.tokenizer.encode(text)
@@ -70,7 +73,6 @@ class GPT2Model:
             input_word_gradients = self.model.transformer.wte.weight.grad[input_ids[0][i], :]
             gradients.append(input_word_gradients)
 
-        # numpy_normalized_gradient = np.array([x.item() for x in gradients])
         return gradients
 
     def get_contrastive_gradient_norm(self, text, correct, foil, explanation=True):
