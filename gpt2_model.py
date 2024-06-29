@@ -50,6 +50,9 @@ class GPT2Model:
     def get_model(self):
         return self.model
 
+    def get_tokenizer(self):
+        return self.tokenizer
+
     def get_g_star(self, text, correct, foil):
         gradients = []
         words = self.tokenizer.encode(text)
@@ -70,22 +73,22 @@ class GPT2Model:
             input_word_gradients = self.model.transformer.wte.weight.grad[input_ids[0][i], :]
             gradients.append(input_word_gradients)
 
-        # numpy_normalized_gradient = np.array([x.item() for x in gradients])
         return gradients
 
     def get_contrastive_gradient_norm(self, text, correct, foil, explanation=True):
         normalized_gradient = []
         gradients = self.get_g_star(text, correct, foil)
         for i in range(len(gradients)):
-            gradient_norm = torch.norm(torch.tensor(gradients[i]), p=1) 
+            gradient_norm = torch.norm(torch.tensor(gradients[i]), p=1)
             normalized_gradient.append(gradient_norm.flatten()[0])
-        numpy_normalized_gradient = np.array([x.item() for x in normalized_gradient])
-        numpy_normalized_gradient = numpy_normalized_gradient/sum(numpy_normalized_gradient)
+
+        numpy_normalized_gradient = self.__scale_outputs(normalized_gradient)
+
         if explanation:
-            return self.get_contrastive_explanation(text, numpy_normalized_gradient)
+            return self.__get_contrastive_explanation(text, numpy_normalized_gradient)
         return numpy_normalized_gradient
 
-    def get_contrastive_input_x_gradient(self, text, correct, foil, explanation=True, norm=False):
+    def get_contrastive_input_x_gradient(self, text, correct, foil, explanation=True):
         dot_product_gradients = []
         tokens = self.tokenizer.encode(text)
         gradients = self.get_g_star(text, correct, foil)
@@ -95,13 +98,11 @@ class GPT2Model:
             word_embedding = self.model.transformer.wte.weight[tokens[i]].detach().numpy()
             dot_product_value = np.dot(gradient, word_embedding)
             dot_product_gradients.append(dot_product_value)
-        if norm:
-            norm = np.linalg.norm(dot_product_gradients, ord=1)
-            dot_product_gradients /= norm
 
-        dot_product_gradients = [-x for x in dot_product_gradients]
+        normalized_probabilities = self.__scale_outputs(dot_product_gradients)
+
         if explanation:
-            return self.get_contrastive_explanation(text,  dot_product_gradients)
+            return self.__get_contrastive_explanation(text,  normalized_probabilities)
         return dot_product_gradients
 
     def get_input_erasure(self, text, correct, foil, explanation=True):
@@ -119,16 +120,22 @@ class GPT2Model:
                 (foil_prediction - foil_erased_prediction)
             )
 
-        numpy_outputs = np.array([x.item() for x in input_erasure_gradients])
-        normalized_probabilities = numpy_outputs/sum(numpy_outputs)
+        normalized_probabilities = self.__scale_outputs(input_erasure_gradients)
+
         if explanation:
-            return self.get_contrastive_explanation(text,  normalized_probabilities)
+            return self.__get_contrastive_explanation(text,  normalized_probabilities)
         return normalized_probabilities
 
-    def get_contrastive_explanation(self, text, saliency_scores):
+    def __get_contrastive_explanation(self, text, saliency_scores):
         tokens = self.tokenizer.encode(text)
         explanation = []
 
         for i in range(len(tokens)):
             explanation.append((self.tokenizer.decode(tokens[i]), saliency_scores[i]))
         return explanation
+
+    def __scale_outputs(self, dot_product_gradients):
+        numpy_outputs = np.array([x.item() for x in dot_product_gradients])
+        normalized_probabilities = numpy_outputs/sum(numpy_outputs)
+
+        return normalized_probabilities
