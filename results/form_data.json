@@ -1,0 +1,978 @@
+[
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Vases were broken by the",
+        "correct word": "boy",
+        "wrong word": "plays",
+        "contrastive function": "gradient norm",
+        "explanation": [
+            [
+                "V",
+                0.20362707912889724
+            ],
+            [
+                "ases",
+                0.1974498446191324
+            ],
+            [
+                " were",
+                0.2988901905708758
+            ],
+            [
+                " broken",
+                0.13665396931406038
+            ],
+            [
+                " by",
+                0.06785928659455036
+            ],
+            [
+                " the",
+                0.09551962977248384
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Helen is observed by the",
+        "correct word": "doctor",
+        "wrong word": "candles",
+        "contrastive function": "input x gradient",
+        "explanation": [
+            [
+                "Hel",
+                0.2728850586029674
+            ],
+            [
+                "en",
+                -0.8580279596067686
+            ],
+            [
+                " is",
+                1.0586961843064093
+            ],
+            [
+                " observed",
+                0.2998175036960797
+            ],
+            [
+                " by",
+                0.41843074490294896
+            ],
+            [
+                " the",
+                -0.19180153190163696
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Curtis is concealed by some",
+        "correct word": "teenager",
+        "wrong word": "paralysis",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "C",
+                0.08374050826557386
+            ],
+            [
+                "urt",
+                0.1408832991831777
+            ],
+            [
+                "is",
+                0.08478123812084519
+            ],
+            [
+                " is",
+                0.006962923129699509
+            ],
+            [
+                " concealed",
+                -0.2283115606775638
+            ],
+            [
+                " by",
+                -0.16535551702717488
+            ],
+            [
+                " some",
+                1.0772991090054425
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "A public park is biked to by the",
+        "correct word": "child",
+        "wrong word": "pasta",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "A",
+                -0.025025079894581786
+            ],
+            [
+                " public",
+                0.10775523415007217
+            ],
+            [
+                " park",
+                0.016963840578007826
+            ],
+            [
+                " is",
+                0.05510355190472337
+            ],
+            [
+                " b",
+                0.1291025095555921
+            ],
+            [
+                "iked",
+                0.03688593411622628
+            ],
+            [
+                " to",
+                -0.01860915126852497
+            ],
+            [
+                " by",
+                0.28489542140748453
+            ],
+            [
+                " the",
+                0.4129277394510005
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Malls are not talked about by some",
+        "correct word": "teenager",
+        "wrong word": "dog",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "M",
+                0.039986371926167906
+            ],
+            [
+                "alls",
+                0.12673039795311675
+            ],
+            [
+                " are",
+                0.25552905652310426
+            ],
+            [
+                " not",
+                0.4151926301514453
+            ],
+            [
+                " talked",
+                0.3620017235505141
+            ],
+            [
+                " about",
+                0.31116366381412375
+            ],
+            [
+                " by",
+                -0.23958287405388434
+            ],
+            [
+                " some",
+                -0.27102096986458774
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Teresa is attacked by some",
+        "correct word": "child",
+        "wrong word": "cacti",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Te",
+                0.02089816099057858
+            ],
+            [
+                "resa",
+                0.01507475093004482
+            ],
+            [
+                " is",
+                0.03128735450457896
+            ],
+            [
+                " attacked",
+                0.2722222621468764
+            ],
+            [
+                " by",
+                0.4629646930313113
+            ],
+            [
+                " some",
+                0.19755277839660992
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Bethany is not disliked by some",
+        "correct word": "alumnus",
+        "wrong word": "fish",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "B",
+                0.5129653870470797
+            ],
+            [
+                "eth",
+                0.04038771493958094
+            ],
+            [
+                "any",
+                -0.22684529693051586
+            ],
+            [
+                " is",
+                -0.38587609862955147
+            ],
+            [
+                " not",
+                -0.3878039875689009
+            ],
+            [
+                " disliked",
+                0.4538019038459826
+            ],
+            [
+                " by",
+                -0.9471366619471233
+            ],
+            [
+                " some",
+                1.9405070392434483
+            ]
+        ]
+    },
+    {
+        "phenomenon": "argument structure",
+        "input sentence": "Janice was not referenced by some",
+        "correct word": "alumnus",
+        "wrong word": "cars",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Jan",
+                0.02134602387296055
+            ],
+            [
+                "ice",
+                0.04471962956136088
+            ],
+            [
+                " was",
+                -0.03442420586378895
+            ],
+            [
+                " not",
+                -0.055215018628058825
+            ],
+            [
+                " referenced",
+                0.2977216236294273
+            ],
+            [
+                " by",
+                -0.08124067898855505
+            ],
+            [
+                " some",
+                0.8070926264166541
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Amelia loves this",
+        "correct word": "waiter",
+        "wrong word": "waiters",
+        "contrastive function": "gradient norm",
+        "explanation": [
+            [
+                "Am",
+                0.19094627991764168
+            ],
+            [
+                "elia",
+                0.2097820851840297
+            ],
+            [
+                " loves",
+                0.27924917181948705
+            ],
+            [
+                " this",
+                0.3200224630788416
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Derek would not bore this young",
+        "correct word": "child",
+        "wrong word": "children",
+        "contrastive function": "input x gradient",
+        "explanation": [
+            [
+                "D",
+                0.34184008667025056
+            ],
+            [
+                "erek",
+                -0.13981617029964713
+            ],
+            [
+                " would",
+                0.03965600815532914
+            ],
+            [
+                " not",
+                0.16902262131581625
+            ],
+            [
+                " bore",
+                0.12304623577719004
+            ],
+            [
+                " this",
+                0.20915042676639428
+            ],
+            [
+                " young",
+                0.25710079161466687
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Amelia has not visited this exposed",
+        "correct word": "waiter",
+        "wrong word": "waiters",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Am",
+                -0.023513547215242535
+            ],
+            [
+                "elia",
+                0.04307653600029133
+            ],
+            [
+                " has",
+                0.15159219643324162
+            ],
+            [
+                " not",
+                0.013719914235362795
+            ],
+            [
+                " visited",
+                0.3185397058709933
+            ],
+            [
+                " this",
+                0.3534767672955558
+            ],
+            [
+                " exposed",
+                0.14310842737979765
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "A lot of cashiers discover that smart",
+        "correct word": "man",
+        "wrong word": "men",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "A",
+                0.06607201785887605
+            ],
+            [
+                " lot",
+                0.19304280306706784
+            ],
+            [
+                " of",
+                -0.019842764243424245
+            ],
+            [
+                " cash",
+                0.2370377559934
+            ],
+            [
+                "iers",
+                0.18140153353392216
+            ],
+            [
+                " discover",
+                0.10399689410851208
+            ],
+            [
+                " that",
+                0.27804911190915266
+            ],
+            [
+                " smart",
+                -0.03975735222750655
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Tomatoes aggravate those",
+        "correct word": "students",
+        "wrong word": "student",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Tom",
+                -0.011232162693326497
+            ],
+            [
+                "atoes",
+                0.08167350252072118
+            ],
+            [
+                " aggrav",
+                0.355306331709818
+            ],
+            [
+                "ate",
+                -0.11650858754165598
+            ],
+            [
+                " those",
+                0.6907609160044433
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "William criticizes this",
+        "correct word": "student",
+        "wrong word": "students",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "William",
+                1.0871296175434015
+            ],
+            [
+                " critic",
+                5.133664012531002
+            ],
+            [
+                "izes",
+                3.8870251925336117
+            ],
+            [
+                " this",
+                -9.107818822608015
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Ruth argued about this exposed",
+        "correct word": "student",
+        "wrong word": "students",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "R",
+                -0.020842017507294707
+            ],
+            [
+                "uth",
+                0.027903099159533526
+            ],
+            [
+                " argued",
+                -0.32290586193859844
+            ],
+            [
+                " about",
+                0.8231840786374167
+            ],
+            [
+                " this",
+                0.03880686720241961
+            ],
+            [
+                " exposed",
+                0.4538538344465233
+            ]
+        ]
+    },
+    {
+        "phenomenon": "determiner noun agreement",
+        "input sentence": "Timothy cannot leave those",
+        "correct word": "guys",
+        "wrong word": "guy",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Tim",
+                -0.07448198347320978
+            ],
+            [
+                "othy",
+                0.040482077136863595
+            ],
+            [
+                " ca",
+                0.08328475204162542
+            ],
+            [
+                " not",
+                -0.0026516503374313873
+            ],
+            [
+                " leave",
+                0.3601528978404068
+            ],
+            [
+                " those",
+                0.5932139067917453
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even Kendra",
+        "correct word": "really",
+        "wrong word": "ever",
+        "contrastive function": "gradient norm",
+        "explanation": [
+            [
+                "Even",
+                0.2127039901086098
+            ],
+            [
+                " Kend",
+                0.3852536209867965
+            ],
+            [
+                "ra",
+                0.4020423889045937
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even Lissa has",
+        "correct word": "clearly",
+        "wrong word": "ever",
+        "contrastive function": "input x gradient",
+        "explanation": [
+            [
+                "Even",
+                -0.2419232567532325
+            ],
+            [
+                " L",
+                0.4485520117860868
+            ],
+            [
+                "issa",
+                0.9902754979591744
+            ],
+            [
+                " has",
+                -0.19690425299202868
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even Tonya could",
+        "correct word": "also",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.077641965936021
+            ],
+            [
+                " Tony",
+                0.24094115529546958
+            ],
+            [
+                "a",
+                0.26313512291138336
+            ],
+            [
+                " could",
+                0.41828175585712607
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even all waiters",
+        "correct word": "certainly",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.1145473523219594
+            ],
+            [
+                " all",
+                0.28744225368297355
+            ],
+            [
+                " wait",
+                0.266148106905755
+            ],
+            [
+                "ers",
+                0.33186228708931204
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even some icicles could",
+        "correct word": "often",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.13132300521459522
+            ],
+            [
+                " some",
+                0.14918096655113935
+            ],
+            [
+                " ic",
+                0.01852873668585854
+            ],
+            [
+                "icles",
+                0.262155930147694
+            ],
+            [
+                " could",
+                0.4388113614007129
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even Renee",
+        "correct word": "often",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.10770677609416796
+            ],
+            [
+                " Ren",
+                0.7160173905446622
+            ],
+            [
+                "ee",
+                0.17627583336116986
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even every unicycle",
+        "correct word": "clearly",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.3794696294784598
+            ],
+            [
+                " every",
+                1.231649548867164
+            ],
+            [
+                " un",
+                -0.8858490677111337
+            ],
+            [
+                "icycle",
+                0.27472988936550985
+            ]
+        ]
+    },
+    {
+        "phenomenon": "npi licensing",
+        "input sentence": "Even most blouses have",
+        "correct word": "often",
+        "wrong word": "ever",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Even",
+                0.3136965202016727
+            ],
+            [
+                " most",
+                0.1603434346396346
+            ],
+            [
+                " bl",
+                0.07922395621276015
+            ],
+            [
+                "ouses",
+                0.15485461585223498
+            ],
+            [
+                " have",
+                0.2918814730936975
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "Angela",
+        "correct word": "likes",
+        "wrong word": "like",
+        "contrastive function": "gradient norm",
+        "explanation": [
+            [
+                "Ang",
+                0.3526504696690931
+            ],
+            [
+                "ela",
+                0.6473495303309069
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "The report about the Lutherans",
+        "correct word": "does",
+        "wrong word": "do",
+        "contrastive function": "input x gradient",
+        "explanation": [
+            [
+                "The",
+                -0.7435213715451403
+            ],
+            [
+                " report",
+                0.7040125008533658
+            ],
+            [
+                " about",
+                0.016473924826224985
+            ],
+            [
+                " the",
+                -0.0941464965164666
+            ],
+            [
+                " Luther",
+                0.04285727216173982
+            ],
+            [
+                "ans",
+                1.0743241702202764
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "The pamphlets about Harvard University",
+        "correct word": "are",
+        "wrong word": "was",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "The",
+                0.1386184390691502
+            ],
+            [
+                " pamph",
+                0.08972763756952337
+            ],
+            [
+                "lets",
+                0.26383798990256696
+            ],
+            [
+                " about",
+                0.29435384100277256
+            ],
+            [
+                " Harvard",
+                0.1164110977262231
+            ],
+            [
+                " University",
+                0.09705099472976385
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "Paintings",
+        "correct word": "have",
+        "wrong word": "has",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "P",
+                0.17427137327844414
+            ],
+            [
+                "aint",
+                0.30403736477153054
+            ],
+            [
+                "ings",
+                0.5216912619500254
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "Amelia",
+        "correct word": "wears",
+        "wrong word": "wear",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "Am",
+                1.4813872572860938
+            ],
+            [
+                "elia",
+                -0.4813872572860938
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "The brothers of Candice",
+        "correct word": "have",
+        "wrong word": "has",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "The",
+                0.13196343219294834
+            ],
+            [
+                " brothers",
+                0.2994030951076608
+            ],
+            [
+                " of",
+                0.34690255033775735
+            ],
+            [
+                " Cand",
+                0.06150625314388239
+            ],
+            [
+                "ice",
+                0.16022466921775114
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "A movie about the Borgias",
+        "correct word": "has",
+        "wrong word": "have",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "A",
+                0.06651644774076326
+            ],
+            [
+                " movie",
+                0.1681406067914047
+            ],
+            [
+                " about",
+                0.18138466113061832
+            ],
+            [
+                " the",
+                -0.017063845584953552
+            ],
+            [
+                " Borg",
+                0.4252917920527463
+            ],
+            [
+                "ias",
+                0.17573033786942097
+            ]
+        ]
+    },
+    {
+        "phenomenon": "subject verb agreement",
+        "input sentence": "The movie about the Borgias",
+        "correct word": "has",
+        "wrong word": "have",
+        "contrastive function": "input erasure",
+        "explanation": [
+            [
+                "The",
+                0.08141344576626139
+            ],
+            [
+                " movie",
+                0.20146180962772195
+            ],
+            [
+                " about",
+                0.15093224123149687
+            ],
+            [
+                " the",
+                -0.04262249691200943
+            ],
+            [
+                " Borg",
+                0.4125356813976725
+            ],
+            [
+                "ias",
+                0.19627931888885675
+            ]
+        ]
+    }
+]
