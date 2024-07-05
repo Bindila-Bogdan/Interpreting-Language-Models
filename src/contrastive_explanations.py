@@ -53,6 +53,9 @@ class ContrastiveExplanations:
     def get_tokenizer(self):
         return self.tokenizer
 
+    def get_prediction(self):
+        return self.predictions
+
     def get_contrastive_gradient_norm(self, text, correct, foil, explanation=True):
         normalized_gradient = []
         gradients = self.__get_g_star(text, correct, foil)
